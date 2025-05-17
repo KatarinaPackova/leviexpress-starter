@@ -23,6 +23,14 @@ const router = createBrowserRouter([
   },
 ]);
 
+// createRoot(document.querySelector('#app')).render(
+//   <RouterProvider router={router} />,
+// );
+// Tady dole zapis aby to nehlasilo v konzole chybu
+
 createRoot(document.querySelector('#app')).render(
-  <RouterProvider router={router} />,
+  <RouterProvider
+    router={router}
+    future={{ v7_startTransition: true, v7_relativeSplatPath: true }}
+  />,
 );
