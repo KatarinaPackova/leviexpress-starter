@@ -21,7 +21,7 @@ export const CityOption = ({ cities }) => {
 };
 
 export const CityDates = ({ dates }) => {
-  console.log(dates);
+  // console.log(dates);
   return (
     <>
       <option value="">Vyberte</option>
@@ -48,7 +48,7 @@ export const JourneyPicker = ({ onJourneyChange }) => {
         `https://apps.kodim.cz/daweb/leviexpress/api/cities`,
       );
       const responseData = await response.json();
-      console.log('responseData', responseData);
+      // console.log('responseData', responseData);
       setCities(responseData.results);
     };
     const fetchDates = async () => {

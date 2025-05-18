@@ -790,12 +790,6 @@ export const SelectedSeat = ({ number }) => {
           </div>
         </div>
       </div> */}
-
-      <div className="controls container">
-        <button className="btn btn--big" type="button">
-          Rezervovat
-        </button>
-      </div>
     </>
   );
 };
